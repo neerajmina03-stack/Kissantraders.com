@@ -591,7 +591,19 @@ footer{
     text-align:center;
 }
 /* ================= FLOATING WHATSAPP ================= */
-.whatsapp{
+.cart-btn{
+    position:fixed;
+    left:20px;
+    bottom:20px;
+    background:#173b2a;
+    color:#fff;
+    border:none;
+    padding:15px 20px;
+    border-radius:50px;
+    cursor:pointer;
+    z-index:9999;
+}
+    .whatsapp{
     position:fixed;
     right:20px;
     bottom:20px;
@@ -833,12 +845,10 @@ footer{
             <div class="price-row">
                 <div class="price">₹499</div>
                 <!-- Change WhatsApp number -->
-                <a
-                    class="order-btn"
-                    href="https://wa.me/919999999999?text=Hello%20Kissan%20Traders,%20I%20want%20to%20order%20Premium%20Ghee."
-                    target="_blank">
-                    Order Now
-                </a>
+                <button class="order-btn"
+        onclick="addToCart('Premium Ghee',499)">
+    Add to Cart
+</button>
             </div>
         </div>
     </div>
@@ -856,12 +866,10 @@ footer{
             </p>
             <div class="price-row">
                 <div class="price">₹899</div>
-                <a
-                    class="order-btn"
-                    href="https://wa.me/919999999999?text=Hello%20Kissan%20Traders,%20I%20want%20to%20order%20the%201kg%20Ghee."
-                    target="_blank">
-                    Order Now
-                </a>
+                <button class="order-btn"
+        onclick="addToCart('Family Pack Ghee',899)">
+    Add to Cart
+</button>
             </div>
         </div>
     </div>
@@ -879,12 +887,11 @@ footer{
             </p>
             <div class="price-row">
                 <div class="price">₹1,699</div>
-                <a
-                    class="order-btn"
-                    href="https://wa.me/919999999999?text=Hello%20Kissan%20Traders,%20I%20want%20to%20order%20the%202kg%20Ghee."
-                    target="_blank">
-                    Order Now
-                </a>
+
+<button class="order-btn"
+        onclick="addToCart('Value Pack',1699)">
+    Add to Cart
+</button>
             </div>
         </div>
     </div>
@@ -1165,6 +1172,45 @@ footer{
     © 2026 Kissan Traders. All Rights Reserved.
 </div>
 </footer>
+    <button class="cart-btn"
+        onclick="openCart()">
+    🛒 Cart (<span id="cartCount">0</span>)
+    </button>
+    
+    <div class="order-modal" id="cartModal">
+    <div class="order-box">
+        <span class="close-btn" onclick="closeCart()">×</span>
+
+        <h2>Your Cart</h2>
+
+        <div id="cartItems"></div>
+
+        <hr style="margin:15px 0">
+
+        <form id="checkoutForm">
+            <input type="text" id="customerName"
+                   placeholder="Full Name" required>
+
+            <input type="tel" id="customerPhone"
+                   placeholder="Mobile Number" required>
+
+            <textarea id="customerAddress"
+                      placeholder="Address"
+                      required></textarea>
+
+            <select id="paymentMethod">
+                <option>Cash on Delivery</option>
+                <option>UPI</option>
+                <option>Bank Transfer</option>
+            </select>
+
+            <button type="submit">
+                Place Order
+            </button>
+        </form>
+    </div>
+    </div>
+    
 <!-- ================= FLOATING WHATSAPP ================= -->
 <a
     class="whatsapp"
@@ -1198,5 +1244,62 @@ faqItems.forEach(item => {
     });
 });
 </script>
+    <script>
+let cart = [];
+
+function addToCart(name, price){
+    let existing =
+    cart.find(item => item.name === name);
+
+    if(existing){
+        existing.qty++;
+    }else{
+        cart.push({
+            name:name,
+            price:price,
+            qty:1
+        });
+    }
+
+    updateCart();
+}
+
+function updateCart(){
+
+    document.getElementById("cartCount")
+    .innerText =
+    cart.reduce((a,b)=>a+b.qty,0);
+
+    let html = "";
+    let total = 0;
+
+    cart.forEach(item=>{
+
+        total += item.price * item.qty;
+
+        html += `
+        <div style="margin-bottom:10px">
+            <strong>${item.name}</strong><br>
+            Qty: ${item.qty}<br>
+            ₹${item.price * item.qty}
+        </div>`;
+    });
+
+    html += `<h3>Total: ₹${total}</h3>`;
+
+    document.getElementById("cartItems")
+    .innerHTML = html;
+}
+
+function openCart(){
+    document.getElementById("cartModal")
+    .style.display="flex";
+}
+
+function closeCart(){
+    document.getElementById("cartModal")
+    .style.display="none";
+}
+    </script>
 </body>
                                     </html>
