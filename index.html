@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=0.65">
 <meta name="theme-color" content="#173b2a">
 <title>Kissan Traders Ghee | Pure Taste. Genuine Quality.</title>
 <meta name="description"
@@ -619,6 +619,39 @@ footer{
     font-size:27px;
     box-shadow:0 10px 25px rgba(0,0,0,.2);
 }
+    .order-modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.6);
+    z-index:99999;
+    justify-content:center;
+    align-items:center;
+}
+
+.order-box{
+    width:90%;
+    max-width:500px;
+    background:#fff;
+    padding:25px;
+    border-radius:20px;
+}
+
+.close-btn{
+    float:right;
+    font-size:30px;
+    cursor:pointer;
+}
+
+.order-box input,
+.order-box textarea,
+.order-box select{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
 /* ================= RESPONSIVE ================= */
 @media(max-width:900px){
     .nav-links{
@@ -682,10 +715,10 @@ footer{
         padding:45px 18px 60px;
     }
     .hero h1{
-        font-size:42px;
+        font-size:30px;
     }
     .hero p{
-        font-size:16px;
+        font-size:14px;
     }
     .product-circle{
         width:280px;
