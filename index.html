@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#173b2a">
+<title>Kissan Traders Ghee | Pure Taste. Genuine Quality.</title>
+<meta name="description"
+content="Discover Kissan Traders Ghee — premium quality ghee made for authentic taste and everyday cooking. Explore our best-selling products and order online.">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#fffdf7;
+    color:#1d2b22;
+    line-height:1.6;
+}
+a{
+    text-decoration:none;
+    color:inherit;
+}
+img{
+    max-width:100%;
+    display:block;
+}
+/* ================= HEADER ================= */
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,253,247,.96);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid #eadfca;
+}
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    min-height:76px;
+    padding:12px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+.logo-icon{
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    background:linear-gradient(145deg,#f8d66d,#b98219);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-size:23px;
+    box-shadow:0 5px 15px rgba(153,105,17,.2);
+}
+.logo-text{
+    font-size:20px;
+    font-weight:800;
+    color:#173b2a;
+}
+.logo-text span{
+    display:block;
+    font-size:10px;
+    letter-spacing:2px;
+    color:#a97920;
+    text-transform:uppercase;
+}
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:28px;
+    font-size:14px;
+    font-weight:600;
+}
+.nav-links a:hover{
+    color:#a97920;
+}
+.nav-btn{
+    background:#173b2a;
+    color:white;
+    padding:11px 19px;
+    border-radius:30px;
+}
+/* ================= HERO ================= */
+.hero{
+    min-height:650px;
+    position:relative;
+    overflow:hidden;
+    background:
+        radial-gradient(circle at 80% 30%,rgba(218,166,51,.18),transparent 30%),
+        linear-gradient(120deg,#fffdf7 0%,#f8f0dc 100%);
+}
+.hero-container{
+    max-width:1200px;
+    min-height:650px;
+    margin:auto;
+    padding:70px 20px;
+    display:grid;
+    grid-template-columns:1.05fr .95fr;
+    align-items:center;
+    gap:50px;
+}
+.badge{
+    display:inline-flex;
+    padding:8px 15px;
+    border:1px solid #dcc48a;
+    border-radius:30px;
+    color:#8c651c;
+    background:#fff9e9;
+    font-size:13px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+.hero h1{
+    font-family:Georgia,serif;
+    font-size:clamp(42px,6vw,72px);
+    line-height:1.05;
+    color:#173b2a;
+    margin-bottom:22px;
+}
+.hero h1 span{
+    color:#b98219;
+}
+.hero p{
+    max-width:590px;
+    color:#657066;
+    font-size:18px;
+    margin-bottom:30px;
+}
+.hero-buttons{
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+}
+.btn{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    min-height:50px;
+    padding:0 25px;
+    border-radius:30px;
+    font-weight:700;
+    transition:.25s;
+}
+.btn-primary{
+    background:#173b2a;
+    color:#fff;
+    box-shadow:0 10px 25px rgba(23,59,42,.2);
+}
+.btn-primary:hover{
+    transform:translateY(-2px);
+}
+.btn-secondary{
+    border:1px solid #d7c8a7;
+    background:#fff;
+    color:#173b2a;
+}
+.hero-image{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.product-circle{
+    width:min(460px,85vw);
+    height:min(460px,85vw);
+    border-radius:50%;
+    background:radial-gradient(circle,#fff5c9 0%,#efd078 48%,#b17b18 100%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:
+        0 35px 70px rgba(104,75,20,.20),
+        inset 0 0 50px rgba(255,255,255,.4);
+}
+.product-circle img{
+    width:75%;
+    max-height:400px;
+    object-fit:contain;
+    filter:drop-shadow(0 25px 25px rgba(0,0,0,.22));
+}
+/* ================= TRUST BAR ================= */
+.trust-bar{
+    background:#173b2a;
+    color:white;
+}
+.trust-container{
+    max-width:1200px;
+    margin:auto;
+    padding:25px 20px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+.trust-item{
+    text-align:center;
+    padding:5px;
+}
+.trust-icon{
+    font-size:25px;
+    margin-bottom:5px;
+}
+.trust-item strong{
+    display:block;
+    font-size:14px;
+}
+.trust-item span{
+    font-size:12px;
+    color:#cbd8d0;
+}
+/* ================= GENERAL ================= */
+.section{
+    max-width:1200px;
+    margin:auto;
+    padding:90px 20px;
+}
+.section-heading{
+    text-align:center;
+    max-width:700px;
+    margin:0 auto 50px;
+}
+.section-heading .small-title{
+    color:#b98219;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:12px;
+    font-weight:800;
+    margin-bottom:10px;
+}
+.section-heading h2{
+    font-family:Georgia,serif;
+    font-size:clamp(32px,4vw,48px);
+    color:#173b2a;
+    margin-bottom:12px;
+}
+.section-heading p{
+    color:#707870;
+}
+/* ================= PRODUCTS ================= */
+.products-section{
+    background:#fffdf7;
+}
+.products{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+.product-card{
+    background:#fff;
+    border:1px solid #eee4d0;
+    border-radius:22px;
+    overflow:hidden;
+    transition:.3s;
+    box-shadow:0 8px 30px rgba(60,45,15,.06);
+}
+.product-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 18px 40px rgba(60,45,15,.12);
+}
+.product-img{
+    height:280px;
+    background:#f8efd8;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:25px;
+}
+.product-img img{
+    height:100%;
+    width:100%;
+    object-fit:contain;
+}
+.product-info{
+    padding:23px;
+}
+.product-info h3{
+    font-family:Georgia,serif;
+    font-size:23px;
+    color:#173b2a;
+    margin-bottom:7px;
+}
+.product-info p{
+    color:#747b75;
+    font-size:14px;
+    margin-bottom:15px;
+}
+.price-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+}
+.price{
+    font-size:20px;
+    font-weight:800;
+    color:#9b6d16;
+}
+.order-btn{
+    background:#173b2a;
+    color:white;
+    border-radius:25px;
+    padding:10px 17px;
+    font-size:13px;
+    font-weight:700;
+}
+/* ================= WHY US ================= */
+.why-section{
+    background:#f5efe0;
+}
+.why-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:55px;
+    align-items:center;
+}
+.why-image{
+    min-height:470px;
+    border-radius:28px;
+    background:
+        linear-gradient(rgba(23,59,42,.1),rgba(23,59,42,.1)),
+        url("images/ghee-process.jpg") center/cover;
+    box-shadow:0 20px 50px rgba(50,40,20,.13);
+}
+.why-content h2{
+    font-family:Georgia,serif;
+    font-size:44px;
+    line-height:1.15;
+    color:#173b2a;
+    margin-bottom:18px;
+}
+.why-content > p{
+    color:#69716b;
+    margin-bottom:28px;
+}
+.feature{
+    display:flex;
+    gap:15px;
+    margin-bottom:20px;
+}
+.feature-icon{
+    flex:0 0 48px;
+    height:48px;
+    border-radius:50%;
+    background:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.06);
+}
+.feature h4{
+    color:#173b2a;
+    margin-bottom:3px;
+}
+.feature p{
+    color:#777;
+    font-size:13px;
+}
+/* ================= QUALITY ================= */
+.quality{
+    background:#173b2a;
+    color:white;
+}
+.quality-grid{
+    max-width:1200px;
+    margin:auto;
+    padding:85px 20px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+.quality h2{
+    font-family:Georgia,serif;
+    font-size:45px;
+    line-height:1.15;
+    margin-bottom:18px;
+}
+.quality p{
+    color:#cbd8d0;
+    margin-bottom:25px;
+}
+.quality-list{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+.quality-box{
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:15px;
+    padding:18px;
+    background:rgba(255,255,255,.04);
+}
+.quality-box strong{
+    display:block;
+    margin-bottom:4px;
+}
+.quality-box span{
+    font-size:12px;
+    color:#b8c8bf;
+}
+.quality-visual{
+    display:flex;
+    justify-content:center;
+}
+.quality-badge{
+    width:330px;
+    height:330px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,.3);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:radial-gradient(circle,rgba(222,179,75,.3),transparent 65%);
+}
+.quality-badge .big{
+    font-family:Georgia,serif;
+    font-size:42px;
+    color:#f1ce6c;
+}
+/* ================= TESTIMONIALS ================= */
+.testimonials{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+.review{
+    background:#fff;
+    border:1px solid #eee4d0;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 8px 25px rgba(60,45,15,.05);
+}
+.stars{
+    color:#c38b1b;
+    letter-spacing:2px;
+    margin-bottom:13px;
+}
+.review p{
+    color:#606a62;
+    font-size:14px;
+    margin-bottom:20px;
+}
+.reviewer{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+.avatar{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    background:#e7d7a7;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:800;
+    color:#173b2a;
+}
+.reviewer strong{
+    font-size:14px;
+}
+.reviewer span{
+    display:block;
+    font-size:11px;
+    color:#888;
+}
+/* ================= ABOUT ================= */
+.about{
+    background:#fbf6e9;
+}
+.about-box{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+}
+.about-box h2{
+    font-family:Georgia,serif;
+    color:#173b2a;
+    font-size:45px;
+    margin-bottom:18px;
+}
+.about-box p{
+    color:#69716b;
+}
+/* ================= FAQ ================= */
+.faq{
+    max-width:850px;
+    margin:auto;
+}
+.faq-item{
+    border-bottom:1px solid #e5dcc8;
+}
+.faq-question{
+    width:100%;
+    border:0;
+    background:none;
+    text-align:left;
+    padding:21px 5px;
+    font-size:16px;
+    font-weight:700;
+    color:#173b2a;
+    cursor:pointer;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.faq-answer{
+    display:none;
+    padding:0 5px 20px;
+    color:#707870;
+    font-size:14px;
+}
+.faq-item.active .faq-answer{
+    display:block;
+}
+/* ================= CTA ================= */
+.final-cta{
+    margin:0 20px 80px;
+    border-radius:30px;
+    background:
+        radial-gradient(circle at 80% 20%,rgba(218,166,51,.3),transparent 35%),
+        #173b2a;
+    color:white;
+    text-align:center;
+    padding:75px 20px;
+}
+.final-cta h2{
+    font-family:Georgia,serif;
+    font-size:clamp(32px,5vw,52px);
+    margin-bottom:13px;
+}
+.final-cta p{
+    max-width:600px;
+    margin:0 auto 25px;
+    color:#cbd8d0;
+}
+/* ================= FOOTER ================= */
+footer{
+    background:#10271c;
+    color:white;
+}
+.footer-container{
+    max-width:1200px;
+    margin:auto;
+    padding:60px 20px 25px;
+    display:grid;
+    grid-template-columns:1.5fr 1fr 1fr 1fr;
+    gap:35px;
+}
+.footer-brand p{
+    color:#aebdb4;
+    font-size:13px;
+    max-width:330px;
+    margin-top:15px;
+}
+.footer-column h4{
+    margin-bottom:15px;
+    color:#f0d17a;
+}
+.footer-column a{
+    display:block;
+    color:#aebdb4;
+    font-size:13px;
+    margin-bottom:9px;
+}
+.footer-column a:hover{
+    color:white;
+}
+.footer-bottom{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+    border-top:1px solid rgba(255,255,255,.1);
+    color:#8d9c93;
+    font-size:12px;
+    text-align:center;
+}
+/* ================= FLOATING WHATSAPP ================= */
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    z-index:2000;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    background:#25d366;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:27px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+/* ================= RESPONSIVE ================= */
+@media(max-width:900px){
+    .nav-links{
+        display:none;
+    }
+    .hero-container{
+        grid-template-columns:1fr;
+        text-align:center;
+        padding-top:55px;
+    }
+    .hero p{
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .hero-buttons{
+        justify-content:center;
+    }
+    .hero-image{
+        order:-1;
+    }
+    .product-circle{
+        width:330px;
+        height:330px;
+    }
+    .trust-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .products{
+        grid-template-columns:1fr 1fr;
+    }
+    .why-grid,
+    .quality-grid{
+        grid-template-columns:1fr;
+    }
+    .why-image{
+        min-height:350px;
+    }
+    .testimonials{
+        grid-template-columns:1fr;
+    }
+    .footer-container{
+        grid-template-columns:1fr 1fr;
+    }
+}
+@media(max-width:600px){
+    .navbar{
+        min-height:68px;
+    }
+    .logo-text{
+        font-size:17px;
+    }
+    .logo-icon{
+        width:42px;
+        height:42px;
+    }
+    .hero{
+        min-height:auto;
+    }
+    .hero-container{
+        min-height:auto;
+        padding:45px 18px 60px;
+    }
+    .hero h1{
+        font-size:42px;
+    }
+    .hero p{
+        font-size:16px;
+    }
+    .product-circle{
+        width:280px;
+        height:280px;
+    }
+    .trust-container{
+        grid-template-columns:1fr 1fr;
+        padding:20px 12px;
+        gap:12px;
+    }
+    .trust-item strong{
+        font-size:12px;
+    }
+    .section{
+        padding:65px 18px;
+    }
+    .products{
+        grid-template-columns:1fr;
+    }
+    .product-img{
+        height:300px;
+    }
+    .why-content h2,
+    .quality h2,
+    .about-box h2{
+        font-size:35px;
+    }
+    .quality-grid{
+        padding:65px 18px;
+    }
+    .quality-list{
+        grid-template-columns:1fr;
+    }
+    .quality-badge{
+        width:260px;
+        height:260px;
+    }
+    .footer-container{
+        grid-template-columns:1fr;
+        padding:45px 20px 25px;
+    }
+    .final-cta{
+        margin-bottom:50px;
+        padding:55px 18px;
+    }
+    .whatsapp{
+        right:15px;
+        bottom:15px;
+    }
+}
+</style>
+</head>
+<body>
+<!-- ================= HEADER ================= -->
+<header>
+<nav class="navbar">
+    <a href="#home" class="logo">
+        <div class="logo-icon">🧈</div>
+        <div class="logo-text">
+            Kissan Traders
+            <span>Premium Ghee</span>
+        </div>
+    </a>
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#quality">Quality</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+        <a href="#products" class="nav-btn">Shop Now</a>
+    </div>
+</nav>
+</header>
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+<div class="hero-container">
+    <div>
+        <div class="badge">
+            ✦ Premium Quality Ghee
+        </div>
+        <h1>
+            Pure Taste.<br>
+            <span>Genuine Quality.</span>
+        </h1>
+        <p>
+            Bring rich, traditional flavour to your kitchen with
+            Kissan Traders Ghee — carefully packed for freshness,
+            taste and everyday use.
+        </p>
+        <div class="hero-buttons">
+            <a href="#products" class="btn btn-primary">
+                Shop Best Sellers →
+            </a>
+            <a href="#quality" class="btn btn-secondary">
+                Our Quality
+            </a>
+        </div>
+    </div>
+    <div class="hero-image">
+        <div class="product-circle">
+            <!-- Replace with your actual product image -->
+            <img
+                src="images/ghee-product.png"
+                alt="Kissan Traders Ghee">
+        </div>
+    </div>
+</div>
+</section>
+<!-- ================= TRUST BAR ================= -->
+<section class="trust-bar">
+<div class="trust-container">
+    <div class="trust-item">
+        <div class="trust-icon">✦</div>
+        <strong>Quality Focused</strong>
+        <span>Carefully selected products</span>
+    </div>
+    <div class="trust-item">
+        <div class="trust-icon">🫙</div>
+        <strong>Freshly Packed</strong>
+        <span>Secure product packaging</span>
+    </div>
+    <div class="trust-item">
+        <div class="trust-icon">🍽️</div>
+        <strong>Rich Taste</strong>
+        <span>Made for everyday cooking</span>
+    </div>
+    <div class="trust-item">
+        <div class="trust-icon">🤝</div>
+        <strong>Customer First</strong>
+        <span>Service you can rely on</span>
+    </div>
+</div>
+</section>
+<!-- ================= PRODUCTS ================= -->
+<section class="section products-section" id="products">
+<div class="section-heading">
+    <div class="small-title">Our Products</div>
+    <h2>Best-Selling Ghee</h2>
+    <p>
+        Explore our popular ghee options and choose the
+        pack size that suits your kitchen.
+    </p>
+</div>
+<div class="products">
+    <!-- PRODUCT 1 -->
+    <div class="product-card">
+        <div class="product-img">
+            <img
+                src="images/ghee-500g.png"
+                alt="Kissan Traders Ghee 500g">
+        </div>
+        <div class="product-info">
+            <h3>Premium Ghee</h3>
+            <p>
+                Perfect for everyday cooking, sweets and traditional recipes.
+            </p>
+            <div class="price-row">
+                <div class="price">₹499</div>
+                <!-- Change WhatsApp number -->
+                <a
+                    class="order-btn"
+                    href="https://wa.me/919999999999?text=Hello%20Kissan%20Traders,%20I%20want%20to%20order%20Premium%20Ghee."
+                    target="_blank">
+                    Order Now
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- PRODUCT 2 -->
+    <div class="product-card">
+        <div class="product-img">
+            <img
+                src="images/ghee-1kg.png"
+                alt="Kissan Traders Ghee 1kg">
+        </div>
+        <div class="product-info">
+            <h3>Family Pack Ghee</h3>
+            <p>
+                A convenient pack for families and regular kitchen use.
+            </p>
+            <div class="price-row">
+                <div class="price">₹899</div>
+                <a
+                    class="order-btn"
+                    href="https://wa.me/919999999999?text=Hello%20Kissan%20Traders,%20I%20want%20to%20order%20the%201kg%20Ghee."
+                    target="_blank">
+                    Order Now
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- PRODUCT 3 -->
+    <div class="product-card">
+        <div class="product-img">
+            <img
+                src="images/ghee-2kg.png"
+                alt="Kissan Traders Ghee 2kg">
+        </div>
+        <div class="product-info">
+            <h3>Value Pack</h3>
+            <p>
+                A larger pack for households that use ghee regularly.
+            </p>
+            <div class="price-row">
+                <div class="price">₹1,699</div>
+                <a
+                    class="order-btn"
+                    href="https://wa.me/919999999999?text=Hello%20Kissan%20Traders,%20I%20want%20to%20order%20the%202kg%20Ghee."
+                    target="_blank">
+                    Order Now
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- ================= WHY KISSAN TRADERS ================= -->
+<section class="why-section">
+<div class="section">
+<div class="why-grid">
+    <div class="why-image"></div>
+    <div class="why-content">
+        <div class="small-title">
+            Why Kissan Traders
+        </div>
+        <h2>
+            Quality You Can Feel In Every Spoon
+        </h2>
+        <p>
+            We focus on delivering a consistent product experience,
+            from sourcing and preparation to packaging and delivery.
+        </p>
+        <div class="feature">
+            <div class="feature-icon">✓</div>
+            <div>
+                <h4>Quality Focused</h4>
+                <p>
+                    We pay attention to product quality at every stage.
+                </p>
+            </div>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">🫙</div>
+            <div>
+                <h4>Carefully Packed</h4>
+                <p>
+                    Secure packaging helps maintain freshness during delivery.
+                </p>
+            </div>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">♥</div>
+            <div>
+                <h4>Made For Your Kitchen</h4>
+                <p>
+                    A versatile choice for cooking, sweets and traditional dishes.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+<!-- ================= QUALITY ================= -->
+<section class="quality" id="quality">
+<div class="quality-grid">
+    <div>
+        <div class="small-title">
+            Our Commitment
+        </div>
+        <h2>
+            Genuine Products.<br>
+            Honest Service.
+        </h2>
+        <p>
+            At Kissan Traders, our goal is simple — provide products
+            that customers can confidently bring into their homes.
+        </p>
+        <div class="quality-list">
+            <div class="quality-box">
+                <strong>Quality Checks</strong>
+                <span>Attention to product quality</span>
+            </div>
+            <div class="quality-box">
+                <strong>Secure Packing</strong>
+                <span>Designed for safe delivery</span>
+            </div>
+            <div class="quality-box">
+                <strong>Fresh Product</strong>
+                <span>Properly packed before dispatch</span>
+            </div>
+            <div class="quality-box">
+                <strong>Customer Care</strong>
+                <span>Support when you need it</span>
+            </div>
+        </div>
+    </div>
+    <div class="quality-visual">
+        <div class="quality-badge">
+            <div class="big">K</div>
+            <strong>KISSAN TRADERS</strong>
+            <span>GHEE</span>
+            <small style="margin-top:12px;color:#b8c8bf;">
+                Quality • Taste • Trust
+            </small>
+        </div>
+    </div>
+</div>
+</section>
+<!-- ================= TESTIMONIALS ================= -->
+<section class="section">
+<div class="section-heading">
+    <div class="small-title">Customer Love</div>
+    <h2>What Our Customers Say</h2>
+    <p>
+        Genuine experiences from customers who have tried our products.
+    </p>
+</div>
+<div class="testimonials">
+    <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>
+            “The taste is really good and the packaging was neat.
+            I enjoyed using it for everyday cooking.”
+        </p>
+        <div class="reviewer">
+            <div class="avatar">R</div>
+            <div>
+                <strong>Rahul</strong>
+                <span>Verified Customer</span>
+            </div>
+        </div>
+    </div>
+    <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>
+            “Good product and nicely packed. The overall ordering
+            experience was smooth.”
+        </p>
+        <div class="reviewer">
+            <div class="avatar">P</div>
+            <div>
+                <strong>Priya</strong>
+                <span>Verified Customer</span>
+            </div>
+        </div>
+    </div>
+    <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>
+            “I liked the flavour and the quality of the packaging.
+            Will order again.”
+        </p>
+        <div class="reviewer">
+            <div class="avatar">A</div>
+            <div>
+                <strong>Amit</strong>
+                <span>Verified Customer</span>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- ================= ABOUT ================= -->
+<section class="about" id="about">
+<div class="section">
+<div class="about-box">
+    <div class="small-title">About Us</div>
+    <h2>
+        The Story Behind Kissan Traders
+    </h2>
+    <p>
+        Kissan Traders was created with a simple idea:
+        make quality food products easily accessible to customers.
+        We believe that a good brand is built through consistent
+        product quality, transparent communication and dependable service.
+    </p>
+</div>
+</div>
+</section>
+<!-- ================= FAQ ================= -->
+<section class="section" id="faq">
+<div class="section-heading">
+    <div class="small-title">FAQ</div>
+    <h2>Frequently Asked Questions</h2>
+</div>
+<div class="faq">
+    <div class="faq-item">
+        <button class="faq-question">
+            What sizes are available?
+            <span>+</span>
+        </button>
+        <div class="faq-answer">
+            We offer different pack sizes depending on product availability.
+            Please check the product section or contact us for current sizes.
+        </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question">
+            How should I store the ghee?
+            <span>+</span>
+        </button>
+        <div class="faq-answer">
+            Store the product according to the storage instructions printed
+            on the product packaging.
+        </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question">
+            How can I place an order?
+            <span>+</span>
+        </button>
+        <div class="faq-answer">
+            Click any “Order Now” button on the website to contact us on
+            WhatsApp and confirm your product, quantity and delivery details.
+        </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question">
+            Do you provide home delivery?
+            <span>+</span>
+        </button>
+        <div class="faq-answer">
+            Delivery availability depends on your location. Contact us
+            on WhatsApp to check delivery options for your area.
+        </div>
+    </div>
+</div>
+</section>
+<!-- ================= FINAL CTA ================= -->
+<section class="final-cta">
+    <h2>Bring Better Taste Home</h2>
+    <p>
+        Explore Kissan Traders Ghee and choose the pack that
+        fits your kitchen.
+    </p>
+    <a href="#products" class="btn btn-primary"
+       style="background:#f0c957;color:#173b2a;">
+        Shop Best Sellers →
+    </a>
+</section>
+<!-- ================= FOOTER ================= -->
+<footer>
+<div class="footer-container">
+    <div class="footer-brand">
+        <div class="logo">
+            <div class="logo-icon">🧈</div>
+            <div class="logo-text" style="color:white;">
+                Kissan Traders
+                <span>Premium Ghee</span>
+            </div>
+        </div>
+        <p>
+            Premium food products with a focus on quality,
+            genuine service and customer satisfaction.
+        </p>
+    </div>
+    <div class="footer-column">
+        <h4>Explore</h4>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#quality">Quality</a>
+        <a href="#about">About Us</a>
+    </div>
+    <div class="footer-column">
+        <h4>Help</h4>
+        <a href="#faq">FAQs</a>
+        <a href="#">Shipping Policy</a>
+        <a href="#">Return Policy</a>
+        <a href="#">Privacy Policy</a>
+    </div>
+    <div class="footer-column">
+        <h4>Contact</h4>
+        <!-- Replace these details -->
+        <a href="tel:+919999999999">
+            +91 99999 99999
+        </a>
+        <a href="mailto:hello@kissantraders.com">
+            hello@kissantraders.com
+        </a>
+        <a
+            href="https://wa.me/919999999999"
+            target="_blank">
+            WhatsApp Us
+        </a>
+    </div>
+</div>
+<div class="footer-bottom">
+    © 2026 Kissan Traders. All Rights Reserved.
+</div>
+</footer>
+<!-- ================= FLOATING WHATSAPP ================= -->
+<a
+    class="whatsapp"
+    href="https://wa.me/919999999999?text=Hello%20Kissan%20Traders,%20I%20want%20to%20know%20more%20about%20your%20Ghee."
+    target="_blank"
+    aria-label="Contact Kissan Traders on WhatsApp">
+    ☎
+</a>
+<!-- ================= JAVASCRIPT ================= -->
+<script>
+const faqItems = document.querySelectorAll(".faq-item");
+faqItems.forEach(item => {
+    const button = item.querySelector(".faq-question");
+    button.addEventListener("click", () => {
+        faqItems.forEach(other => {
+            if(other !== item){
+                other.classList.remove("active");
+                const icon = other.querySelector(".faq-question span");
+                if(icon){
+                    icon.textContent = "+";
+                }
+            }
+        });
+        item.classList.toggle("active");
+        const icon = button.querySelector("span");
+        if(item.classList.contains("active")){
+            icon.textContent = "−";
+        }else{
+            icon.textContent = "+";
+        }
+    });
+});
+</script>
+</body>
+                                    </html>
