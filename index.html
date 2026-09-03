@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#24150b">
+<meta name="description" content="Kissan Traders Premium Bilona Buffalo Ghee">
+<title>Kissan Traders — Premium Bilona Buffalo Ghee</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap');
+:root{
+ --ink:#21150e;--brown:#5b3217;--brown2:#8a501f;--gold:#d5a044;--gold2:#f0cc78;
+ --cream:#fff8ea;--cream2:#f7ecd5;--white:#fff;--muted:#796b5e;--line:#eadbc0;
+ --green:#23864e;--shadow:0 20px 60px rgba(70,38,10,.12)
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"DM Sans",Arial,sans-serif;color:var(--ink);background:#fffdf8}
+a{text-decoration:none;color:inherit}button,input,textarea,select{font:inherit}
+.container{width:min(1160px,calc(100% - 32px));margin:auto}
+.header{position:sticky;top:0;z-index:1000;background:rgba(255,253,248,.9);backdrop-filter:blur(18px);border-bottom:1px solid #eadfcf}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:11px}
+.logo{width:48px;height:48px;border-radius:15px;background:linear-gradient(145deg,#f0c86b,#6c3b18);display:grid;place-items:center;color:#fff;font-weight:900;box-shadow:0 8px 20px #63381725}
+.brand b{font-size:15px;letter-spacing:1px}.brand small{display:block;color:#8d7863;font-size:10px;letter-spacing:1.3px;margin-top:1px}
+.menu{border:1px solid #dfcfb4;background:#fffaf0;color:var(--brown);width:45px;height:45px;border-radius:13px;font-size:22px;cursor:pointer}
+.hero{overflow:hidden;position:relative;background:radial-gradient(circle at 80% 10%,#f3d997 0,transparent 25%),linear-gradient(135deg,#fffaf0,#f2dfb9);padding:78px 0 72px}
+.hero:after{content:"";position:absolute;width:480px;height:480px;border:1px solid #d6ae5d55;border-radius:50%;right:-200px;bottom:-260px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:60px}
+.kicker{display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border:1px solid #dfc27d;background:#fffaf0;border-radius:99px;color:var(--brown);font-size:12px;font-weight:800}
+h1{font-family:"Playfair Display",serif;font-size:clamp(47px,6.7vw,78px);line-height:1.01;margin:20px 0 18px;letter-spacing:-2px}
+.gold{color:#9b641f}
+.hero-copy{font-size:18px;color:var(--muted);max-width:600px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:13px;padding:14px 21px;font-weight:800;cursor:pointer;transition:.2s}
+.btn:hover{transform:translateY(-2px)}
+.primary{background:var(--brown);color:#fff;box-shadow:0 12px 25px #63381725}
+.secondary{background:#fff;border:1px solid #dcc9a8;color:var(--brown)}
+.hero-note{display:flex;gap:22px;flex-wrap:wrap;color:#6e5c4a;font-size:12px;font-weight:700}
+.product-showcase{position:relative;min-height:450px;display:grid;place-items:center}
+.glow{position:absolute;width:390px;height:390px;background:#e6b84e33;border-radius:50%;filter:blur(5px)}
+.big-jar{position:relative;width:225px;height:285px;border-radius:27px 27px 45px 45px;background:linear-gradient(90deg,#fff,#f0e6d0 45%,#fff);border:1px solid #d8c5a5;box-shadow:0 35px 55px #54301628}
+.big-jar:before{content:"";position:absolute;top:-28px;left:18px;right:18px;height:40px;background:linear-gradient(#553016,#2e180b);border-radius:12px 12px 7px 7px}
+.label{position:absolute;left:18px;right:18px;top:83px;text-align:center;background:linear-gradient(#f7dfaa,#e9c978);border:2px solid #a66c25;border-radius:8px;padding:20px 8px;color:#563014}
+.label .mini{font-size:9px;letter-spacing:2px;font-weight:800}.label strong{display:block;font-family:"Playfair Display",serif;font-size:23px;line-height:1.05;margin:5px 0}.label span{font-size:11px;font-weight:900}
+.stamp{position:absolute;right:5%;bottom:32px;width:105px;height:105px;border-radius:50%;border:2px dashed #a8752f;background:#fff9eb;display:grid;place-items:center;text-align:center;font-size:10px;font-weight:900;color:#70471d;transform:rotate(10deg)}
+.strip{background:#24150b;color:#fff;padding:14px 0}.strip-inner{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;text-align:center;font-size:12px;font-weight:700}.strip span{color:#e5ba62}
+section{padding:82px 0}.title{text-align:center;margin-bottom:38px}.eyebrow{text-transform:uppercase;letter-spacing:2px;color:#a16a27;font-size:11px;font-weight:900}.title h2{font-family:"Playfair Display",serif;font-size:42px;margin:7px 0}.title p{color:var(--muted)}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:17px;box-shadow:0 10px 35px #5730140b;transition:.25s}.card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.pack{height:190px;border-radius:16px;background:#fbf4e5;display:grid;place-items:center;position:relative;margin-bottom:17px;overflow:hidden}.pack img{width:100%;height:100%;object-fit:cover;display:block}
+
+.card h3{font-size:17px}.size{color:#8b7864;font-size:12px;margin-top:2px}.price{font-size:23px;font-weight:900;color:var(--brown);margin:8px 0 14px}
+.qtyrow{display:flex;gap:7px;margin-bottom:9px}.qtyrow button{width:35px;border:1px solid #d8c7aa;background:#fff;border-radius:9px;cursor:pointer}.qtyrow input{width:50px;text-align:center;border:1px solid #d8c7aa;border-radius:9px}
+.full{width:100%}
+.why{background:var(--cream)}.advantages{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.adv{background:#fff;border:1px solid var(--line);padding:25px;border-radius:20px}.adv-icon{font-size:29px}.adv h3{margin:9px 0 5px;color:var(--brown)}.adv p{color:var(--muted);font-size:14px}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.step{text-align:center;padding:22px 12px}.step-no{margin:auto;width:45px;height:45px;border-radius:50%;background:#f0d18d;color:var(--brown);display:grid;place-items:center;font-weight:900}.step h3{font-size:16px;margin:11px 0 4px}.step p{font-size:13px;color:var(--muted)}
+.feedback{background:#fbf2df}.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.review{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px}.stars{color:#c88a23;letter-spacing:2px;margin-bottom:10px}.review p{color:#5e5146}.review small{display:block;color:#9a8977;margin-top:12px}
+.support{background:#2a180c;color:#fff}.support .title h2,.support .title p{color:#fff}.support-box{display:flex;align-items:center;justify-content:space-between;gap:25px;background:#3b2414;border:1px solid #67442b;border-radius:24px;padding:28px}.support-box p{color:#d7c9ba}
+footer{background:#160c06;color:#e8ddd2;text-align:center;padding:35px 16px}.disclaimer{max-width:850px;margin:12px auto;color:#988a7d;font-size:11px}
+.side{position:fixed;right:-310px;top:0;width:295px;height:100vh;background:#fffaf0;z-index:1400;padding:25px;box-shadow:-15px 0 45px #0003;transition:.3s}.side.open{right:0}.close{float:right;border:0;background:none;font-size:30px;cursor:pointer}.side h3{clear:both;padding-top:25px;font-family:"Playfair Display",serif;font-size:28px;color:var(--brown)}.side a{display:block;padding:16px 3px;border-bottom:1px solid var(--line);font-weight:800}.overlay{display:none;position:fixed;inset:0;background:#0008;z-index:1300}.overlay.show{display:block}
+.cart{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:1100;background:#21150e;color:#fff;border-radius:17px;padding:10px 12px 10px 15px;display:none;align-items:center;gap:13px;box-shadow:0 15px 35px #0005}.cart.show{display:flex}.cart button{padding:10px 15px}.count{background:#e5b75a;color:#2c1909;border-radius:20px;padding:4px 9px;font-weight:900}
+.wa{position:fixed;right:18px;bottom:85px;z-index:1050;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;font-size:28px;box-shadow:0 10px 25px #0004}
+.modal{position:fixed;inset:0;background:#0008;z-index:1600;display:none;padding:18px;overflow:auto}.modal.show{display:grid;place-items:center}.modalbox{width:min(610px,100%);background:#fffaf0;border-radius:23px;padding:26px;position:relative}.x{position:absolute;right:16px;top:12px;border:0;background:none;font-size:29px;cursor:pointer}.order{border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:17px 0}.line{display:flex;justify-content:space-between;gap:10px;padding:11px 0;border-bottom:1px dashed var(--line);font-size:14px}.field{margin:10px 0}.field label{display:block;font-size:12px;font-weight:900;margin-bottom:5px}.field input,.field textarea,.field select{width:100%;border:1px solid #d9c7aa;border-radius:10px;padding:12px;background:#fff}.toast{position:fixed;left:17px;bottom:18px;z-index:1700;background:#fffaf0;border:1px solid var(--line);padding:13px 16px;border-radius:14px;box-shadow:var(--shadow);display:none;max-width:310px;font-size:13px}.toast.show{display:block}
+@media(max-width:850px){.hero-grid{grid-template-columns:1fr;text-align:center}.hero-copy{margin:auto}.hero-note{justify-content:center}.product-showcase{min-height:400px}.products{grid-template-columns:repeat(2,1fr)}.advantages,.reviews{grid-template-columns:1fr}.process{grid-template-columns:repeat(2,1fr)}.support-box{flex-direction:column;text-align:center}.strip-inner{grid-template-columns:repeat(2,1fr);row-gap:10px}}
+@media(max-width:850px){.container > div[style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important}}
+@media(max-width:520px){.container{width:min(100% - 24px,1160px)}.nav{height:68px}.hero{padding:55px 0}.hero h1{font-size:48px}.title h2{font-size:34px}.products{gap:9px}.card{padding:11px;border-radius:16px}.pack{height:145px}.price{font-size:20px}.process{gap:5px}.wa{bottom:80px}.cart{width:calc(100% - 24px);justify-content:space-between}}
+</style>
+</head>
+<body>
+
+<header class="header">
+ <div class="container nav">
+  <a class="brand" href="#home"><div class="logo">KT</div><div><b>KISSAN TRADERS</b><small>BILONA BUFFALO GHEE</small></div></a>
+  <button class="menu" onclick="openMenu()">☰</button>
+ </div>
+</header>
+
+<div class="overlay" id="overlay" onclick="closeMenu()"></div>
+<aside class="side" id="side">
+ <button class="close" onclick="closeMenu()">×</button>
+ <h3>Explore</h3>
+ <a href="#home" onclick="closeMenu()">Home</a>
+ <a href="#products" onclick="closeMenu()">Products</a>
+ <a href="#why" onclick="closeMenu()">Why Choose Us</a>
+ <a href="#feedback" onclick="closeMenu()">Feedback</a>
+ <a href="#support" onclick="closeMenu()">Support</a>
+</aside>
+
+<section class="hero" id="home">
+ <div class="container hero-grid">
+  <div>
+   <span class="kicker">🌾 TRADITIONAL • PREMIUM • FAMILY PACKED</span>
+   <h1>Rich Taste.<br><span class="gold">Desi Tradition.</span></h1>
+   <p class="hero-copy">Discover Kissan Traders Bilona Buffalo Ghee — a premium, village-inspired ghee experience made for traditional Indian kitchens.</p>
+   <div class="actions"><a href="#products" class="btn primary">Shop Ghee →</a><a href="#why" class="btn secondary">Why Choose Us</a></div>
+   <div class="hero-note"><span>✓ Buffalo Milk</span><span>✓ Bilona Inspired</span><span>✓ Carefully Packed</span></div>
+  </div>
+  <div class="product-showcase">
+   <div class="glow"></div>
+   <div class="big-jar"><div class="label"><div class="mini">KISSAN TRADERS</div><strong>BILONA<br>BUFFALO GHEE</strong><span>DESI VILLAGE STYLE</span></div></div>
+   <div class="stamp">TRADITIONAL<br>QUALITY<br>★ ★ ★</div>
+  </div>
+ </div>
+</section>
+
+<div class="strip"><div class="container strip-inner"><div>🐃 <span>Buffalo</span> Milk</div><div>🪔 <span>Bilona</span> Inspired</div><div>📦 <span>Secure</span> Packing</div><div>🚚 <span>Home</span> Delivery</div></div></div>
+
+<section id="products">
+ <div class="container">
+  <div class="title"><div class="eyebrow">Our Collection</div><h2>Choose Your Ghee</h2><p>Four convenient pack sizes for your home and family.</p></div>
+  <div class="products" id="productsGrid"></div>
+ </div>
+</section>
+
+
+<section style="padding-top:20px;padding-bottom:20px">
+ <div class="container" style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
+  <div style="border-radius:24px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)"><img src="assets/ghee2.jpeg" alt="Kissan Traders ghee family use" style="width:100%;height:100%;min-height:300px;object-fit:cover;display:block"></div>
+  <div style="border-radius:24px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)"><img src="assets/ghee5.jpeg" alt="Kissan Traders buffalo ghee traditional preparation" style="width:100%;height:100%;min-height:300px;object-fit:cover;display:block"></div>
+ </div>
+</section>
+<section class="why" id="why">
+ <div class="container">
+  <div class="title"><div class="eyebrow">The Kissan Difference</div><h2>Why Should You Choose Us?</h2><p>Traditional inspiration with a premium presentation and quality-focused approach.</p></div>
+  <div class="advantages">
+   <div class="adv"><div class="adv-icon">🐃</div><h3>Buffalo Milk Ghee</h3><p>Prepared from buffalo milk-based dairy fat for a rich, traditional flavour profile.</p></div>
+   <div class="adv"><div class="adv-icon">🪔</div><h3>Bilona Inspired</h3><p>Inspired by the traditional bilona-style approach followed in Indian households.</p></div>
+   <div class="adv"><div class="adv-icon">🌾</div><h3>Desi Village Feel</h3><p>A traditional taste and presentation inspired by the simplicity of village kitchens.</p></div>
+   <div class="adv"><div class="adv-icon">✨</div><h3>Quality Focused</h3><p>Careful handling and packaging are central to our product experience.</p></div>
+   <div class="adv"><div class="adv-icon">🍳</div><h3>Everyday Kitchen</h3><p>Enjoy it with cooking, tadka and traditional Indian dishes as part of your regular kitchen routine.</p></div>
+   <div class="adv"><div class="adv-icon">📦</div><h3>4 Pack Sizes</h3><p>Pick 500ml, 1 litre, 5 litre or 10 litre depending on your household needs.</p></div>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="container">
+  <div class="title"><div class="eyebrow">From Our Kitchen To Yours</div><h2>Our Simple Promise</h2></div>
+  <div class="process">
+   <div class="step"><div class="step-no">01</div><h3>Select</h3><p>Choose the pack size you need.</p></div>
+   <div class="step"><div class="step-no">02</div><h3>Order</h3><p>Add to cart and submit your details.</p></div>
+   <div class="step"><div class="step-no">03</div><h3>Confirm</h3><p>Order information reaches our WhatsApp.</p></div>
+   <div class="step"><div class="step-no">04</div><h3>Deliver</h3><p>Your order is prepared for delivery.</p></div>
+  </div>
+ </div>
+</section>
+
+
+<section style="padding-top:15px;padding-bottom:25px">
+ <div class="container">
+  <img src="assets/ghee4.jpeg" alt="Kissan Traders traditional buffalo ghee" style="width:100%;max-height:620px;object-fit:cover;border-radius:26px;box-shadow:var(--shadow);border:1px solid var(--line);display:block">
+ </div>
+</section>
+<section class="feedback" id="feedback">
+ <div class="container">
+  <div class="title"><div class="eyebrow">Customer Love</div><h2>Feedback From Our Customers</h2><p>Use verified customer reviews here after receiving permission to publish them.</p></div>
+  <div class="reviews">
+   <div class="review"><div class="stars">★★★★★</div><p>“Ghee ka taste rich aur traditional laga. Packing bhi bahut neat thi.”</p><small>Sample review • Replace with verified feedback</small></div>
+   <div class="review"><div class="stars">★★★★★</div><p>“1 litre pack family ke liye convenient raha. Overall experience achha tha.”</p><small>Sample review • Replace with verified feedback</small></div>
+   <div class="review"><div class="stars">★★★★★</div><p>“Traditional flavour pasand aaya aur order process simple tha.”</p><small>Sample review • Replace with verified feedback</small></div>
+  </div>
+ </div>
+</section>
+
+<section class="support" id="support">
+ <div class="container">
+  <div class="title"><div class="eyebrow" style="color:#e6b75b">We're Here To Help</div><h2>Need Help With Your Order?</h2><p>Message Kissan Traders on WhatsApp for product, order or delivery support.</p></div>
+  <div class="support-box"><div><h3>WhatsApp Support</h3><p>Quick assistance for your order and product questions.</p></div><a id="supportBtn" class="btn" style="background:#25d366;color:#fff" target="_blank">💬 Chat on WhatsApp</a></div>
+ </div>
+</section>
+
+<footer>
+ <strong>KISSAN TRADERS</strong>
+ <div class="disclaimer">Product information is for general food/product information only and is not medical advice. Avoid unsupported medical or disease-treatment claims. Before publishing, add your actual business address, FSSAI details, shipping policy, refund/return policy, privacy policy and terms.</div>
+ <small>© 2026 Kissan Traders. All rights reserved.</small>
+</footer>
+
+<a class="wa" id="waBtn" target="_blank" aria-label="WhatsApp Support">◔</a>
+
+<div class="cart" id="cartBar"><span>🛒 <b id="cartCount">0</b> items</span><span>₹<b id="cartTotal">0</b></span><button class="btn" style="background:#e4b85e;color:#2b1809" onclick="openCart()">View Cart</button></div>
+
+<div class="modal" id="modal">
+ <div class="modalbox">
+  <button class="x" onclick="closeCart()">×</button>
+  <h2 style="font-family:'Playfair Display',serif;font-size:30px;color:#5b3217">Complete Your Order</h2>
+  <div class="order" id="orderLines"></div>
+  <div style="display:flex;justify-content:space-between;font-weight:900;font-size:20px"><span>Total</span><span>₹<span id="modalTotal">0</span></span></div>
+  <div class="field"><label>FULL NAME *</label><input id="name" placeholder="Enter your name"></div>
+  <div class="field"><label>MOBILE NUMBER *</label><input id="phone" inputmode="numeric" maxlength="10" placeholder="10-digit mobile number"></div>
+  <div class="field"><label>DELIVERY ADDRESS *</label><textarea id="address" rows="3" placeholder="House / village / city / PIN"></textarea></div>
+  <div class="field"><label>PAYMENT</label><select id="payment"><option>Cash on Delivery</option><option>Online Payment — Razorpay</option></select></div>
+  <button class="btn primary full" onclick="submitOrder()">Submit Order on WhatsApp →</button>
+  <p style="font-size:11px;color:#857466;margin-top:10px">For live online payments, connect your Razorpay account and verify payments server-side before production.</p>
+ </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+/* ========= CHANGE THESE SETTINGS ========= */
+const WHATSAPP_NUMBER = "91XXXXXXXXXX"; // Example: 919876543210
+const products=[
+ {id:"500",size:"500 ml",price:499,image:"assets/ghee1.jpeg"},
+ {id:"1L",size:"1 Litre",price:899,image:"assets/ghee2.jpeg"},
+ {id:"5L",size:"5 Litre",price:3999,image:"assets/ghee3.jpeg"},
+ {id:"10L",size:"10 Litre",price:7499,image:"assets/ghee4.jpeg"}
+];
+let cart={};
+
+const money=n=>new Intl.NumberFormat("en-IN").format(n);
+function render(){
+ document.getElementById("productsGrid").innerHTML=products.map(p=>`
+ <article class="card">
+  <div class="pack"><img src="${p.image}" alt="Kissan Traders Bilona Buffalo Ghee ${p.size}"></div>
+  <h3>Bilona Buffalo Ghee</h3><div class="size">${p.size}</div>
+  <div class="price">₹${money(p.price)}</div>
+  <div class="qtyrow"><button onclick="qty('${p.id}',-1)">−</button><input id="q${p.id}" type="number" min="1" value="1"><button onclick="qty('${p.id}',1)">+</button></div>
+  <button class="btn primary full" onclick="add('${p.id}')">Add to Cart</button>
+ </article>`).join("");
+}
+function qty(id,d){let e=document.getElementById("q"+id);e.value=Math.max(1,(parseInt(e.value)||1)+d)}
+function add(id){let q=Math.max(1,parseInt(document.getElementById("q"+id).value)||1);cart[id]=(cart[id]||0)+q;update();toast("Added to cart ✓")}
+function update(){
+ let c=0,t=0;products.forEach(p=>{let q=cart[p.id]||0;c+=q;t+=q*p.price});
+ document.getElementById("cartCount").textContent=c;document.getElementById("cartTotal").textContent=money(t);
+ document.getElementById("cartBar").classList.toggle("show",c>0);
+}
+function openCart(){
+ if(!Object.keys(cart).length){toast("Your cart is empty");return}
+ let t=0;
+ document.getElementById("orderLines").innerHTML=products.filter(p=>cart[p.id]).map(p=>{let q=cart[p.id],x=q*p.price;t+=x;return `<div class="line"><span>Bilona Buffalo Ghee • ${p.size} × ${q}</span><b>₹${money(x)}</b></div>`}).join("");
+ document.getElementById("modalTotal").textContent=money(t);document.getElementById("modal").classList.add("show");
+}
+function closeCart(){document.getElementById("modal").classList.remove("show")}
+function submitOrder(){
+ const n=document.getElementById("name").value.trim(),ph=document.getElementById("phone").value.trim(),a=document.getElementById("address").value.trim();
+ if(!n||!/^[6-9]\d{9}$/.test(ph)||!a){toast("Please enter valid name, 10-digit mobile and address.");return}
+ if(WHATSAPP_NUMBER.includes("X")){toast("Replace WHATSAPP_NUMBER in the code first.");return}
+ let t=0,items=[];
+ products.filter(p=>cart[p.id]).forEach(p=>{let q=cart[p.id],x=q*p.price;t+=x;items.push(`• Bilona Buffalo Ghee ${p.size} × ${q} = ₹${money(x)}`)});
+ const id="KT"+Date.now().toString().slice(-7);
+ const text=`*NEW ORDER — KISSAN TRADERS*%0A%0AOrder ID: ${id}%0AName: ${encodeURIComponent(n)}%0AMobile: ${ph}%0AAddress: ${encodeURIComponent(a)}%0A%0A*Products:*%0A${encodeURIComponent(items.join("\n"))}%0A%0A*TOTAL: ₹${money(t)}*%0APayment: ${encodeURIComponent(document.getElementById("payment").value)}`;
+ window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`,"_blank");toast("Order details opened in WhatsApp.");
+}
+function openMenu(){document.getElementById("side").classList.add("open");document.getElementById("overlay").classList.add("show")}
+function closeMenu(){document.getElementById("side").classList.remove("open");document.getElementById("overlay").classList.remove("show")}
+function toast(s){let t=document.getElementById("toast");t.textContent=s;t.classList.add("show");setTimeout(()=>t.classList.remove("show"),3000)}
+function setupWA(){
+ const url=WHATSAPP_NUMBER.includes("X")?"#":`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hello Kissan Traders, I need support.")}`;
+ document.getElementById("waBtn").href=url;document.getElementById("supportBtn").href=url;
+}
+render();update();setupWA();
+</script>
+</body>
+</html>
